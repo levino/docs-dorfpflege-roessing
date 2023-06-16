@@ -1,0 +1,9 @@
+{
+  "label": "Arbeitskreise",
+
+  "customProps": {
+    "description": "This description can be used in the swizzled DocCard"
+  },
+  "collapsible": false
+}
+

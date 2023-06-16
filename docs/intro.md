@@ -1,3 +1,6 @@
-# Docs Intro
+---
+slug: /
+title: Willkommen
+---
 
-Hier findet man eine Sammlung von Dingen, die ich einmal gelernt oder recherchiert habe und gerne festhalten möchte. Hauptsächlich für mich und natürlich für alle, die daran interessiert sind.
+Hier schreiben wir alles auf, was wir nicht vergessen dürfen, oder was wir uns zusammen überlegt haben.
