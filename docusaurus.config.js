@@ -39,8 +39,6 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           routeBasePath: '/',
           editUrl:
             'https://github.com/levino/docs-dorfpflege-roessing/tree/main/',
