@@ -6,6 +6,7 @@
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",
+    "lint": "eslint .",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
@@ -28,7 +29,12 @@
     "@docusaurus/module-type-aliases": "2.3.1",
     "@types/prettier": "^2",
     "@types/prop-types": "^15",
-    "prettier": "^2.8.8"
+    "@typescript-eslint/eslint-plugin": "^6.3.0",
+    "@typescript-eslint/parser": "^6.3.0",
+    "eslint": "^8.46.0",
+    "eslint-config-prettier": "^9.0.0",
+    "prettier": "^2.8.8",
+    "typescript": "^5.1.6"
   },
   "browserslist": {
     "production": [
@@ -44,5 +50,6 @@
   },
   "engines": {
     "node": ">=16.14"
-  }
+  },
+  "packageManager": "yarn@3.6.1"
 }
