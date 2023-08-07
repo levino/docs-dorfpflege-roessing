@@ -78,8 +78,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        links: [
-        ],
+        links: [],
         copyright: `Copyright © ${new Date().getFullYear()} Dorfpflege Rössing e.V.`,
       },
       prism: {
