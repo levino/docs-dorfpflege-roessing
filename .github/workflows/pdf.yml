@@ -5,7 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Create PDF
-        uses: BerniWittmann/background-server-action@v1
         run:
           docker run --rm -i -v $(pwd)/pdf:/app/pdf
           openbayes/docusaurus-prince-pdf --output pdf/docs.pdf -u
