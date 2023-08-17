@@ -1,3 +1,4 @@
+name: 'Build PDF version'
 on:
   workflow_dispatch:
 jobs:
