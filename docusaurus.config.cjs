@@ -30,7 +30,16 @@ const config = {
     defaultLocale: 'de',
     locales: ['de'],
   },
-  plugins: ['@docusaurus/plugin-ideal-image'],
+  plugins: [
+    [
+      '@docusaurus/plugin-ideal-image',
+      {
+        max: 1920,
+        min: 640,
+        steps: 4,
+      },
+    ],
+  ],
 
   presets: [
     [
