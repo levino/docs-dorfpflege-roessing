@@ -39,12 +39,12 @@ jobs:
         uses: BerniWittmann/background-server-action@v1
         with:
           command:
-            docker run --network pdf --rm -i -v $(pwd)/pdf:/app/pdf
+            docker run --rm -i -v $(pwd)/pdf:/app/pdf
             openbayes/docusaurus-prince-pdf --output pdf/docs.pdf -u
             http://server
           start:
-            docker run --rm -i --network pdf --name server -v
-            $(pwd)/build:/public joseluisq/static-web-server:2
+            docker run --rm -i --name server -v $(pwd)/build:/public
+            joseluisq/static-web-server:2
       - name: Upload results
         uses: actions/upload-artifact@v3
         with:
