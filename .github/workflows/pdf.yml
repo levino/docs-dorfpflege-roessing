@@ -9,7 +9,7 @@ jobs:
         run:
           docker run --rm -i -v $(pwd)/pdf:/app/pdf
           openbayes/docusaurus-prince-pdf --output pdf/docs.pdf -u
-          https://docs.dorpflege.rössing.de
+          https://docs.dorfpflege.xn--rssing-wxa.de/
       - name: Upload results
         uses: actions/upload-artifact@v3
         with:
