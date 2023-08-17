@@ -5,10 +5,15 @@ jobs:
   pdf:
     runs-on: ubuntu-latest
     steps:
+      - name: Install Prince
+        run: |
+          curl https://www.princexml.com/download/prince-14.2-linux-generic-x86_64.tar.gz -O
+          tar zxf prince-14.2-linux-generic-x86_64.tar.gz
+          cd prince-14.2-linux-generic-x86_64
+          yes "" | sudo ./install.sh
       - name: Create PDF
         run:
-          docker run --rm -i -v $(pwd)/pdf:/app/pdf
-          openbayes/docusaurus-prince-pdf --output pdf/docs.pdf -u
+          npx docusaurus-prince-pdf --output pdf/docs.pdf -u
           https://docs.dorfpflege.xn--rssing-wxa.de/
       - name: Upload results
         uses: actions/upload-artifact@v3
