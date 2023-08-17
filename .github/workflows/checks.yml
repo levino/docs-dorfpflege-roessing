@@ -39,9 +39,9 @@ jobs:
         uses: BerniWittmann/background-server-action@v1
         with:
           command:
-            docker run --rm -i -v $(pwd)/pdf:/app/pdf
-            openbayes/docusaurus-prince-pdf --output pdf/docs.pdf -u
-            http://gateway.docker.internal:3000
+            docker run --add-host=host.docker.internal:host-gateway --rm -i -v
+            $(pwd)/pdf:/app/pdf openbayes/docusaurus-prince-pdf --output
+            pdf/docs.pdf -u http://host.docker.internal:3000
           start: yarn serve
       - name: Upload results
         uses: actions/upload-artifact@v3
