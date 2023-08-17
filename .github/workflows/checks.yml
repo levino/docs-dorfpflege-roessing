@@ -27,3 +27,26 @@ jobs:
           node-version: 18
       - run: yarn
       - run: yarn prettier -c .
+  pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 18
+      - run: yarn
+      - name: Create PDF
+        uses: BerniWittmann/background-server-action@v1
+        with:
+          command:
+            docker run --rm -i -v $(pwd)/pdf:/app/pdf
+            openbayes/docusaurus-prince-pdf --output pdf/docs.pdf -u
+            http://gateway.docker.internal:3000
+          start: yarn serve
+      - name: Upload results
+        uses: actions/upload-artifact@v3
+        with:
+          name: pdf
+          # The output filename can be specified with --output option
+          path: pdf/docs.pdf
+          if-no-files-found: error
