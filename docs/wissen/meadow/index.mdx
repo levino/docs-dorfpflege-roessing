@@ -2,7 +2,7 @@
 title: Blumenwiese
 ---
 
-import Image from '@theme/IdealImage'
+import { Image } from '@site/src/components/Image'
 
 # Mahd einer Wildblumenwiese
 
@@ -78,7 +78,7 @@ Die gängigste Mahdmethode ist die zweischürige Mahd.
 
 <Image
   alt="Diagramm zweischürige Mahd"
-  img={require('./assets/zweischuerige-mahd.png')}
+  {...require('./assets/zweischuerige-mahd.png')}
 />
 
 Bei der zweischürigen Mahd erfolgt eine Mahd (mit Abtragen des Schnitts)
@@ -102,7 +102,7 @@ Nutzwert. Auch die Kosten sind, durch den halbierten Arbeitsaufwand, geringer.
 
 <Image
   alt="Diagramm einschürige Mahd"
-  img={require('./assets/einschuerige-mahd.png')}
+  {...require('./assets/einschuerige-mahd.png')}
 />
 
 Hier bilden sich bereits im Hochsommer ab August die Samenstände. Vögel und
@@ -125,7 +125,7 @@ Blumen.
 
 <Image
   alt="Diagramm dreischürige Mahd"
-  img={require('./assets/dreischuerige-mahd.png')}
+  {...require('./assets/dreischuerige-mahd.png')}
 />
 
 Der Zeitraum für das Ausreifen der Samen im Herbst ist knapp bemessen.
