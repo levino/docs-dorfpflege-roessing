@@ -2,7 +2,6 @@ import { ifElse } from 'fp-ts-std/Function'
 import { constant, flow } from 'fp-ts/function'
 import { equals } from 'fp-ts/Ord'
 import { Ord as StringOrd } from 'fp-ts/string'
-import { tap } from 'ramda'
 export const getYear = (date: Date): string =>
   date.toLocaleString('de-DE', {
     year: 'numeric',
@@ -20,7 +19,6 @@ export const dateAndTimeAsString = (date: Date): string =>
 
 const specifiesYearOnly: (date: Date) => boolean = flow(
   dateAndTimeAsString,
-  tap(console.log),
   equals(StringOrd)('1/1, 12:00:00 AM')
 )
 
