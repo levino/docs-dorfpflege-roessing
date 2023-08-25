@@ -1,4 +1,6 @@
+//eslint-disable-next-line
 const fs = require('fs-extra')
+//eslint-disable-next-line
 const yaml = require('js-yaml')
 
 async function writeMdxFiles(yamlFilePath) {
