@@ -1,0 +1,46 @@
+[
+  {
+    "begin_date": "0822-01-01",
+    "end_date": "0877-12-31",
+    "description": "Erste urkundliche Erwähnung Rössings als Rhottingun in der älteren Reihe der Corveyer Traditionen."
+  },
+  {
+    "begin_date": "1039-01-01",
+    "description": "Nach Familienüberlieferung, erste Erwähnung der Herren von Rössing."
+  },
+  {
+    "begin_date": "1054-01-01",
+    "description": "Verschiedene Urkunden zeugen von Besitzübertragungen, Lehnsvergaben und Abtretung von Zehnten durch die Bischöfe."
+  },
+  {
+    "begin_date": "1132-01-01",
+    "description": "Erste urkundliche Erwähnung der Herren von Rössing Ernestus de Rottige minis terialis. Die Herren von Rössing werden von den Bischöfen mit den 'Gütern zu Rössing' belehnt, genauer Zeitpunkt unbekannt."
+  },
+  {
+    "begin_date": "1150-01-01",
+    "end_date": "1200-12-31",
+    "description": "Hebeliste des Klosters Helmarshausen beschreibt die Größe und Erträge seines Rössinger Meierdings (Fronhofswirtschaft) 22 Hufe (je 30 Morgen) und Höfe mit 22 Hörigen, dazu der Amtshof, Wiesen und Weiden (ca. 900 Morgen insgesamt)."
+  },
+  {
+    "begin_date": "1132-01-01",
+    "description": "Domprobst Friedrich bestätigt, dass der Bürger und Ministerial Volkmar 110 Pfund aus dem Zehnten zu Rössing für das Seelenheil seiner Familie überwiesen hat."
+  },
+  {
+    "begin_date": "1282-01-01",
+    "end_date": "1297-12-31",
+    "description": "Kirche St. Peter und Paul in Rössing wird erbaut durch die Herren von Rössing (Kirchenpatronat)."
+  },
+  {
+    "begin_date": "1292-01-01",
+    "description": "Herzog Otto der Strenge errichtet auf der Grenze zum Bistum Hildesheim an der Leine eine Turmburg (Feste Calenberg)."
+  },
+  {
+    "begin_date": "1342-01-01",
+    "end_date": "1542-12-31",
+    "description": "Ständige Fehden zwischen Fürsten, Rittern, Hildesheimer Bischöfen und der Stadt Hildesheim."
+  },
+  {
+    "begin_date": "1342-01-01",
+    "description": "Lippold von Rössing und sein Sohn Siverd geloben, dass den Herzögen von Braunschweig und Lüneburg von ihrer Burg aus kein Schaden zugefügt werden soll."
+  }
+]
