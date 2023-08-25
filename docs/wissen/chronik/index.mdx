@@ -1,0 +1,25 @@
+import { getDate, getYear } from './tools'
+import { events } from './events.ts'
+
+# Dorfchronik
+
+<table>
+  <thead>
+    <tr>
+      <th>Jahr</th>
+      <th>Datum</th>
+      <th>Ereignis</th>
+    </tr>
+  </thead>
+  <tbody>
+    {events.map(({ frontMatter: { beginDate }, default: Event }, index) => (
+      <tr key={index}>
+        <td>{getYear(new Date(beginDate))}</td>
+        <td>{getDate(new Date(beginDate))}</td>
+        <td>
+          <Event />
+        </td>
+      </tr>
+    ))}
+  </tbody>
+</table>
