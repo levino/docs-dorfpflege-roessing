@@ -63,6 +63,15 @@ const config = {
         },
       }),
     }),
+    () => ({
+      name: 'docusaurus-tailwindcss',
+      configurePostCss(postcssOptions) {
+        // Appends TailwindCSS and AutoPrefixer.
+        postcssOptions.plugins.push(require('tailwindcss'))
+        postcssOptions.plugins.push(require('autoprefixer'))
+        return postcssOptions
+      },
+    }),
   ],
 
   presets: [
@@ -76,7 +85,15 @@ const config = {
           editUrl:
             'https://github.com/levino/docs-dorfpflege-roessing/tree/main/',
         },
-        blog: false,
+        blog: {
+          path: 'berichte',
+          blogTitle: 'Berichte der Dorfpflege',
+          routeBasePath: 'berichte',
+          editUrl:
+            'https://github.com/levino/docs-dorfpflege-roessing/tree/main/',
+          blogDescription:
+            'Berichte über Aktionen, die die Dorfpflege veranstaltet hat, sowie Protokolle der Versammlungen.',
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -100,7 +117,12 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Docs',
+            label: 'Dokumentation',
+          },
+          {
+            label: 'Berichte',
+            to: 'berichte',
+            position: 'left',
           },
           {
             href: 'https://github.com/levino/docs-dorfpflege-roessing',
