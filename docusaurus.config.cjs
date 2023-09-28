@@ -99,6 +99,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/unterlagen',
+          path: 'unterlagen',
           editUrl:
             'https://github.com/levino/docs-dorfpflege-roessing/tree/main/',
         },
