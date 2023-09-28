@@ -6,6 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  noIndex: true,
   title: 'Dorfpflege Rössing Dokumentation',
   tagline:
     'Hier finden Sie alle Unterlagen zur Arbeit in der Dorfpflege Rössing',
