@@ -6,10 +6,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  title: 'Dorfpflege Rössing - Interne Homepage',
   noIndex: true,
-  title: 'Dorfpflege Rössing Dokumentation',
   tagline:
-    'Hier finden Sie alle Unterlagen zur Arbeit in der Dorfpflege Rössing',
+    'Hier findest Du alle Unterlagen zur Arbeit in der Dorfpflege Rössing',
   favicon: 'img/favicon.ico',
   // Set the production url of your site here
   url: 'https://docs.dorfpflege.rössing.de/',
@@ -19,7 +19,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'levino', // Usually your GitHub org/user name.
+  organizationName: 'levino', // Usually your GitHub org/username.
   projectName: 'docs-dorfpflege-roessing', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -80,9 +80,25 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        pages: {
+          path: 'src/pages',
+          routeBasePath: '/',
+          include: ['**/*.{js,jsx,ts,tsx,md,mdx}'],
+          exclude: [
+            '**/_*.{js,jsx,ts,tsx,md,mdx}',
+            '**/_*/**',
+            '**/*.test.{js,jsx,ts,tsx}',
+            '**/__tests__/**',
+          ],
+          mdxPageComponent: '@theme/MDXPage',
+          remarkPlugins: [import('remark-math')],
+          rehypePlugins: [],
+          beforeDefaultRemarkPlugins: [],
+          beforeDefaultRehypePlugins: [],
+        },
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          routeBasePath: '/',
+          routeBasePath: '/unterlagen',
           editUrl:
             'https://github.com/levino/docs-dorfpflege-roessing/tree/main/',
         },
@@ -108,9 +124,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/social-card.webp',
       navbar: {
-        title: 'Dokumentation der Dorpflege Rössing',
+        title: 'Dorpflege Rössing',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Die rössinger Eichen',
           src: 'img/logo.jpg',
         },
         items: [
@@ -118,12 +134,18 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Dokumentation',
+            label: 'Unterlagen',
+            to: '/unterlagen',
           },
           {
             label: 'Berichte',
-            to: 'berichte',
+            to: '/berichte',
             position: 'left',
+          },
+          {
+            label: 'Impressum',
+            to: '/imprint',
+            position: 'right',
           },
           {
             href: 'https://github.com/levino/docs-dorfpflege-roessing',
