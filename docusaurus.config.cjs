@@ -10,7 +10,7 @@ const config = {
   title: 'Dorfpflege Rössing Dokumentation',
   tagline:
     'Hier finden Sie alle Unterlagen zur Arbeit in der Dorfpflege Rössing',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.jpg',
   // Set the production url of your site here
   url: 'https://docs.dorfpflege.rössing.de/',
   // Set the /<baseUrl>/ pathname under which your site is served
@@ -110,7 +110,7 @@ const config = {
       navbar: {
         title: 'Dokumentation der Dorpflege Rössing',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Wappen von Rössing',
           src: 'img/logo.jpg',
         },
         items: [
